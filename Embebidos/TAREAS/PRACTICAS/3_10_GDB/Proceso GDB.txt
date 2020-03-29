@@ -1,0 +1,53 @@
+Objetivo de la practica realizaremos un programa en codigo fuente y vamos a localizar el ciclo infinito del programa como los tipos de debug que tiene errores y vamos a ver:
+
+*primero creamo nuestro codigo de fuente.c
+
+*introducimos:
+  gcc bucle.c -o bucle -g
+
+* veamos lo que nos arroja lo que tenemos de permisos del codigo fuente:
+
+ls -l
+ 
+*Corremos el programa con el comando siguente:
+
+  ./bucle
+
+* como se logra observar al introducion un caracter dentro de la terminal u objeto este se vueve infinito y no basta detenerlo con un control + c
+
+*compilamos dentro de gdb introducimos:
+
+gdb bucle
+
+start
+
+gdb n (esto se hace para seguir al siguente comando)
+
+gdb modificamos el printf con gdb:
+
+print c
+
+*E igual manera el if
+
+print c 
+
+nos vamos hasta la termiancion del codigo y teclamos: 
+
+ gdb q
+
+esto se detendra el gdb y se saldra del debug. 
+
+
+* Abrimos emacs con el archivo anteriormente
+
+emacs bucle.c 
+
+* modificamos la linea de comando que se encuentra de while y la colocamos dentro del while porque si no este lo haria infinito el mandar un caracter infinito como en bucle.
+
+salvamos la modificacion y corremos el programa:
+
+* como se puede observar ya se detuvo el bulce infinito del problema que se tenia que hacer y ya solo escribe lo que queramos mandar.
+
+
+* Muchas gracias por su atencion
+
