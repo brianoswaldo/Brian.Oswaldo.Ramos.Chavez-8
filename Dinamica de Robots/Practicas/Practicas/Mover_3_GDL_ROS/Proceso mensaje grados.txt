@@ -1,0 +1,27 @@
+OBjetivo de la practica es mover motores nema con gdl para su funcionamiento para cualquier poryecto desde ros con psoc conectado.
+ 
+1 para inicia r debemos conectar  la psoc y ver en administardor en dispositivos en cual puero esta conectado y habilitar el puerto.
+
+ 
+2 roscore
+
+3  dmesg | grep tty
+[    1.203022] printk: console [tty0] enabled
+[    3.556860] 00:02: ttyS3 at I/O 0x2e8 (irq = 3, base_baud = 115200) is a 16550A
+
+4 sudo chmod 777  /dev/ttyS3
+
+5 source /home/machinewar69/node-message/2d-spine-control-hardware/ros-spine-control/devel/setup.bash
+
+6 rosrun spine_controller serial_tx_cmdline.py /dev/ttyS3
+
+*eN OTRA TERMINAL
+
+7 source /home/machinewar69/node-message/2d-spine-control-hardware/ros-spine-control/devel/setup.bash
+
+8 rosrun spine_controller serial_rx_echo.py /dev/ttyS3
+
+9 Nos mostrara los valores que le damos al motor nema para que gire
+
+
+              "Gracias por su antencion"
