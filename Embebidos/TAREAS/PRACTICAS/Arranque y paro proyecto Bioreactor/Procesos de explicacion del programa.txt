@@ -1,0 +1,16 @@
+Hoy veremos el circuito electrico de un arranque
+y paro de un motor para aplicarlo en el bioreactor
+de manera que este active y desactive el motor en funcionamiento e igualmente tenga un enclave el mismo, para que haga su funcion.
+
+* En este estado se encuentra activo el interruptor 
+I1 por lo que el interruptor I2 esta impidiendo que este motor encienda y el interruptor I5 su funcion es un paro de emergencia para cualquier cosa que pase dentro del funcionamineto.
+
+*se activa el I2 pero como el I5 esta abierto no permite el paso de encender al motor porque esta en modo de proteccion del motor
+
+*Desactivamos el I5 la proteccion del motor y este enciende y se mentiene por el contancto que tiene la bobina conectada directamente.
+
+* cuando desactivamos el interruptor I1 e impide el paso de corriente y funciona como paro y arranque cuando el I2 esta activo de igual forma.
+
+
+
+
